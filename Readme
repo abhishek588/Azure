@@ -1,0 +1,14 @@
+This python code will authenticate the azure session using Service Principal and then create a resource group in a user defined location, VM, VNet, Subnet, VNIC.
+It will fail if there is an existing resource group with the same name.
+
+Steps:-
+
+1. Download python sdk for Azure "git clone https://github.com/Azure/azure-sdk-for-python.git"
+2. cd azure-sdk-for-python
+3. python setup.py install
+4. To create a Service Principal, run the following command in azure cli and save the output in a file named "auth.json"
+        az ad sp create-for-rbac --name "MY-PRINCIPAL-NAME" --password "STRONG-SECRET-PASSWORD"
+
+5. Run ConnectAzure_authentication.py file.
+6. Run create_vm_azure.py file and provide the inputs asked.
+7. Check in the azure portal to see the new resource group and its components created.
