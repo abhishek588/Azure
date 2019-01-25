@@ -2,7 +2,7 @@ This python code will authenticate the azure session using Service Principal and
 It will fail if there is an existing resource group with the same name.
 
 Steps:-
-
+just to Check
 1. Download python sdk for Azure "git clone https://github.com/Azure/azure-sdk-for-python.git"
 2. cd azure-sdk-for-python
 3. python setup.py install
